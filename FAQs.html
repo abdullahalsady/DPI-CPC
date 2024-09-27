@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+
+</head>
+<body style="font-family: Lexend">
+    <!-- navbar -->
+
+    <div class="navbar bg-base-100 w-[90%] mx-auto flex items-center mt-6 border-b h-20">
+        <!-- Left (Logo on large devices) -->
+        <div class="navbar-start flex items-center">
+          <!-- Dropdown for small and medium devices -->
+          <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>FAQs</a></li>
+              <li><a>Committee</a></li>
+              <li><a>Courses</a></li>
+            </ul>
+          </div>
+      
+          <!-- Logo for large devices -->
+          <a class="btn btn-ghost text-xl hidden lg:flex items-center">
+            <img class="w-24 h-auto absolute top-3" src="./assets/logo.png" alt="Logo">
+          </a>
+        </div>
+      
+        <!-- Center (For small/medium devices only) -->
+        <div class="navbar-center lg:hidden">
+            <img class="w-24" src="./assets/logo.png" alt="Logo">
+        </div>
+      
+        <!-- Right (Nav items and Notification icon on large devices) -->
+        <div class="navbar-end flex items-center space-x-4">
+          <!-- Nav items for large devices -->
+          <ul class="menu menu-horizontal hidden lg:flex space-x-4">
+            <li><a>Home</a></li>
+            <li><a>FAQs</a></li>
+            <li><a>Committee</a></li>
+            <li><a>Courses</a></li>
+          </ul>
+      
+          <!-- Divider -->
+          <div class="hidden lg:block border-l h-8 mx-4"></div>
+      
+          <!-- Notification icon -->
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+      
+      
+      
+      
+
+    <!-- body --> 
+    
+    <div class="flex justify-center join join-vertical w-[90%] mx-auto max-w-screen-lg md:w-9/12 lg:w-7/12 mt-20 mb-20">
+        <h1 class="text-4xl mb-4 font-extrabold">Important FAQs</h1>
+      
+        <!-- FAQ 1 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" checked="checked" />
+          <div class="collapse-title text-xl font-medium">Who can join the Computer Programming Club?</div>
+          <div class="collapse-content">
+            <p>Any student enrolled at Daffodil Polytechnic Institute, regardless of skill level, is welcome to join. Whether you're a <span class="font-bold bg-gray-100 rounded-xl px-1">beginner</span> or <span class="font-bold bg-gray-100 rounded-xl px-1">experienced programmer</span>, there’s a place for you in the club.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 2 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">Do I need prior programming experience to join?</div>
+          <div class="collapse-content">
+            <p><span class="font-bold bg-gray-100 rounded-lg px-1">No prior experience</span> is required! We have activities and resources for all skill levels, from beginners to advanced programmers.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 3 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">What programming languages does the club focus on?</div>
+          <div class="collapse-content">
+            <p>The club explores a variety of programming languages, including <span class="font-bold bg-gray-100 rounded-lg px-1">Python</span>, <span class="font-bold bg-gray-100 rounded-lg px-1">JavaScript</span>, <span class="font-bold bg-gray-100 rounded-lg px-1">C++</span>, and others based on interest and current industry trends.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 4 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">When and where do club meetings take place?</div>
+          <div class="collapse-content">
+            <p>Club meetings are typically held <span class="font-bold bg-gray-100 rounded-lg px-1">once a week on campus</span>. Exact times and locations will be shared via our social media channels and group messages.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 5 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">What kind of activities does the club organize?</div>
+          <div class="collapse-content">
+            <p>We host <span class="font-bold bg-gray-100 rounded-xl px-1">workshops</span>, <span class="font-bold bg-gray-100 rounded-xl px-1">coding challenges</span>, <span class="font-bold bg-gray-100 rounded-xl px-1">hackathons</span>, group projects, guest lectures, and peer-to-peer coding sessions to enhance learning and collaboration.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 6 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">Is there a membership fee to join the club?</div>
+          <div class="collapse-content">
+            <p>No, there is <span class="font-bold bg-gray-100 rounded-xl px-1">no membership fee</span>. The club is open to all students free of charge.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 7 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">Can I suggest topics for workshops or projects?</div>
+          <div class="collapse-content">
+            <p>Absolutely! We encourage members to <span class="font-bold bg-gray-100 rounded-lg px-1">suggest new topics and ideas</span> for projects, workshops, or events. Your input helps shape the club’s activities.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 8 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">How can I improve my coding skills through the club?</div>
+          <div class="collapse-content">
+            <p>The club provides various opportunities like <span class="font-bold bg-gray-100 rounded-lg px-1">workshops</span>, <span class="font-bold bg-gray-100 rounded-lg px-1">coding competitions</span>, and group projects where you can practice and enhance your skills. Peer support and mentoring are also available.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 9 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">Can I join the club in the middle of the semester?</div>
+          <div class="collapse-content">
+            <p><span class="font-bold bg-gray-100 rounded-lg px-1">Yes</span>, students can join the club at any time during the semester. We welcome new members throughout the year.</p>
+          </div>
+        </div>
+      
+        <!-- FAQ 10 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="faq-accordion" />
+          <div class="collapse-title text-xl font-medium">How can I stay updated on upcoming events and meetings?</div>
+          <div class="collapse-content">
+            <p>Stay connected by following our <span class="font-bold bg-gray-100 rounded-lg px-1">social media pages</span>, joining our official group chat, or checking announcements on the club's notice board and website.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+
+
+      <!-- footer -->
+      <footer class="footer footer-center bg-black text-primary-content p-10">
+        <aside>
+          <img class="w-32" src="./assets/logo.png" alt="">
+          <p class="font-bold">
+            DPI CPC
+            <br />
+            Daffodil's hub for coding enthusiasts.
+          </p>
+          <p>Copyright © <script>document.write(new Date().getFullYear());</script> - All rights reserved</p>
+        </aside>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
+      
+      
+</body>
+</html>
