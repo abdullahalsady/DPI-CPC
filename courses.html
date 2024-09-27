@@ -3,55 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- tailwind css -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
+    <title>Courses</title>
+    <!-- tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
 </head>
-<body>
+<body style="font-family: Lexend">
+  <!-- navbar -->
+
+  <div class="navbar bg-base-100 w-[90%] mx-auto flex items-center mt-6 border-b h-20">
+      <!-- Left (Logo on large devices) -->
+      <div class="navbar-start flex items-center">
+        <!-- Dropdown for small and medium devices -->
+        <div class="dropdown lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./FAQs.html">FAQs</a></li>
+            <li><a href="./committee.html">Committee</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+          </ul>
+        </div>
+    
+        <!-- Logo for large devices -->
+        <a class="btn btn-ghost text-xl hidden lg:flex items-center">
+          <img class="w-24 h-auto absolute top-3" src="./assets/logo.png" alt="Logo">
+        </a>
+      </div>
+    
+      <!-- Center (For small/medium devices only) -->
+      <div class="navbar-center lg:hidden">
+          <img class="w-24" src="./assets/logo.png" alt="Logo">
+      </div>
+    
+      <!-- Right (Nav items and Notification icon on large devices) -->
+      <div class="navbar-end flex items-center space-x-4">
+        <!-- Nav items for large devices -->
+        <ul class="menu menu-horizontal hidden lg:flex space-x-4">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./FAQs.html">FAQs</a></li>
+          <li><a href="./committee.html">Committee</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+        </ul>
+    
+        <!-- Divider -->
+        <div class="hidden lg:block border-l h-8 mx-4"></div>
+    
+        <!-- Notification icon -->
+        <button class="btn btn-ghost btn-circle">
+          <a href="./notice.html">
+            <div class="indicator">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </a>
+        </button>
+      </div>
+    </div>
+    
+    
+    
     
 
-    <div class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden md:max-w-md">
-        <img class="w-full h-48 object-cover" src="your-image-url.jpg" alt="Graphic Design Image">
+  <!-- body --> 
+  
+  <div class="w-[80%] mx-auto  p-4 mt-8 mb-8">
+    <div class="flex flex-wrap justify-center lg:justify-start lg:flex-nowrap lg:space-x-4 w-full mx-auto">
+      <!-- First Card -->
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden flex-grow">
+        <img class="w-full h-48 object-cover" src="./assets/graphic-design.jpg" alt="Graphic Design Image">
         <div class="p-4">
-          <div class="text-orange-500 text-xs font-semibold uppercase tracking-wide">All Course</div>
-          <h2 class="mt-1 text-xl font-semibold text-gray-900">Professional Graphic Design</h2>
-          
+          <h2 class="mt-1 text-xl font-semibold text-gray-900">Graphic Design</h2>
           <div class="flex items-center mt-2">
             <div class="flex items-center text-yellow-500">
-              <!-- Replace this with the number of stars needed -->
               <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z"/>
+                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z" />
               </svg>
-              <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z"/>
-              </svg>
-              <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z"/>
-              </svg>
-              <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z"/>
-              </svg>
-              <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z"/>
-              </svg>
+              <span class="ml-2 text-gray-600 text-sm">14 Reviews</span>
             </div>
-            <span class="ml-2 text-gray-600 text-sm">14,400 Reviews</span>
           </div>
-          
           <div class="flex justify-between items-center mt-4">
-            <span class="text-gray-600 text-sm">18,000 Students</span>
+            <span class="text-gray-600 text-sm">Course Fee 200 BDT</span>
           </div>
-      
-          <div class="mt-4">
-            <div class="text-gray-700 font-bold text-lg">Course Fee 50,000 BDT</div>
-          </div>
-          
-          <div class="mt-4">
-            <button class="w-full py-2 px-4 bg-red-500 text-white text-center text-sm font-semibold rounded hover:bg-red-600">Click for discount</button>
+          <!-- Buttons at the bottom -->
+          <div class="mt-4 flex justify-between space-x-2">
+            <button class="w-full py-2 px-4 border border-gray-300 text-gray-700 text-center text-sm font-semibold rounded hover:bg-gray-100">
+              Course Outline
+            </button>
+            <button class="w-full py-2 px-4 bg-[rgb(8,47,73)] text-white text-center text-sm font-semibold rounded hover:bg-blue-600">
+              Buy Now
+            </button>
           </div>
         </div>
       </div>
-      
+  
+      <!-- Second Card -->
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden flex-grow mt-4 lg:mt-0">
+        <img class="w-full h-48 object-cover" src="./assets/web design.jpg" alt="Web Design Image">
+        <div class="p-4">
+          <h2 class="mt-1 text-xl font-semibold text-gray-900">Web Design</h2>
+          <div class="flex items-center mt-2">
+            <div class="flex items-center text-yellow-500">
+              <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z" />
+              </svg>
+            </div>
+            <span class="ml-2 text-gray-600 text-sm">14 Reviews</span>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <span class="text-gray-600 text-sm">Course Fee 200 BDT</span>
+          </div>
+          <!-- Buttons at the bottom -->
+          <div class="mt-4 flex justify-between space-x-2">
+            <button class="w-full py-2 px-4 border border-gray-300 text-gray-700 text-center text-sm font-semibold rounded hover:bg-gray-100">
+              Course Outline
+            </button>
+            <button class="w-full py-2 px-4 bg-[rgb(8,47,73)] text-white text-center text-sm font-semibold rounded hover:bg-blue-600">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third Card -->
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden flex-grow mt-4 lg:mt-0">
+        <img class="w-full h-48 object-cover" src="./assets/competitive.jpg" alt="Web Design Image">
+        <div class="p-4">
+          <h2 class="mt-1 text-xl font-semibold text-gray-900">Competitive Programmer</h2>
+          <div class="flex items-center mt-2">
+            <div class="flex items-center text-yellow-500">
+              <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10 15l-5.4 2.8 1-5.9L1.7 7.8l6-.9L10 2l2.3 4.9 6 .9-4.4 4.1 1 5.9z" />
+              </svg>
+            </div>
+            <span class="ml-2 text-gray-600 text-sm">14 Reviews</span>
+          </div>
+          <div class="flex justify-between items-center mt-4">
+            <span class="text-gray-600 text-sm">Course Fee 200 BDT</span>
+          </div>
+          <!-- Buttons at the bottom -->
+          <div class="mt-4 flex justify-between space-x-2">
+            <button class="w-full py-2 px-4 border border-gray-300 text-gray-700 text-center text-sm font-semibold rounded hover:bg-gray-100">
+              Course Outline
+            </button>
+            <button class="w-full py-2 px-4 bg-[rgb(8,47,73)] text-white text-center text-sm font-semibold rounded hover:bg-blue-600">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+    
+    
+    
+
+
+    <!-- footer -->
+    <footer class="footer footer-center bg-black text-primary-content p-10">
+      <aside>
+        <img class="w-32" src="./assets/logo.png" alt="">
+        <p class="font-bold">
+          DPI CPC
+          <br />
+          Daffodil's hub for coding enthusiasts.
+        </p>
+        <p>Copyright © <script>document.write(new Date().getFullYear());</script> - All rights reserved</p>
+      </aside>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+    
+    
 </body>
 </html>
+
