@@ -14,12 +14,253 @@
         
             <link rel="icon" href="./assets/logo.png" type="image/x-icon">
 </head>
-<body>
+<body style="font-family: Lexend">
     
+  <div class="navbar bg-base-100 w-[90%] mx-auto flex items-center mt-6 border-b h-20">
+    <!-- Left (Logo on large devices) -->
+    <div class="navbar-start flex items-center">
+      <!-- Dropdown for small and medium devices -->
+      <div class="dropdown lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./FAQs.html">FAQs</a></li>
+          <li><a href="./committee.html">Committee</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+        </ul>
+      </div>
+  
+      <!-- Logo for large devices -->
+      <a class="btn btn-ghost text-xl hidden lg:flex items-center">
+        <img class="w-24 h-auto absolute top-3" src="./assets/logo.png" alt="Logo">
+      </a>
+    </div>
+  
+    <!-- Center (For small/medium devices only) -->
+    <div class="navbar-center lg:hidden">
+        <img class="w-24" src="./assets/logo.png" alt="Logo">
+    </div>
+  
+    <!-- Right (Nav items and Notification icon on large devices) -->
+    <div class="navbar-end flex items-center space-x-4">
+      <!-- Nav items for large devices -->
+      <ul class="menu menu-horizontal hidden lg:flex space-x-4">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./FAQs.html">FAQs</a></li>
+        <li><a href="./committee.html">Committee</a></li>
+        <li><a href="./courses.html">Courses</a></li>
+      </ul>
+  
+      <!-- Divider -->
+      <div class="hidden lg:block border-l h-8 mx-4"></div>
+  
+      <!-- Notification icon -->
+      <button class="btn btn-ghost btn-circle">
+        <a href="./notice.html">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+            <span class="badge badge-xs badge-primary indicator-item"></span>
+          </div>
+        </a>
+      </button>
+    </div>
+  </div>
+
+  <!-- main content -->
+  <div role="tablist" class="tabs mt-16 mb-16 tabs-lifted w-[90%] lg:w-[80%] mx-auto">
+    <!-- Presidium members tab -->
+    <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Presidiums" />
+    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+      <div class="flex justify-center lg:justify-start gap-6">
+        <h2 class="text-xl lg:text-2xl font-bold mb-4 lg:mb-6">Presidium <span class="text-gray-500">Members</span></h2>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-start gap-6">
+        <!-- Card 1 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secretariat members tab -->
+    <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Secretariats" checked="checked" />
+    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+      <div class="flex justify-center lg:justify-start gap-6">
+        <h2 class="text-xl lg:text-2xl font-bold mb-4 lg:mb-6">Secretariat <span class="text-gray-500">Members</span></h2>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-start gap-6">
+        <!-- Card 1 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- General members tab -->
+    <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="Generals" />
+    <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+      <div class="flex justify-center lg:justify-start gap-6">
+        <h2 class="text-xl lg:text-2xl font-bold mb-4 lg:mb-6">General <span class="text-gray-500">Members</span></h2>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-start gap-6">
+        <!-- Card 1 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card card-compact bg-base-100 w-[90%] lg:w-96 shadow-xl mx-auto lg:mx-0">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
 
 
-    <footer class="footer footer-center bg-black text-primary-content p-10"></footer>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    <footer class="footer footer-center bg-black text-primary-content p-10">
         <aside>
           <img class="w-32" src="./assets/logo.png" alt="">
           <p class="font-bold">
